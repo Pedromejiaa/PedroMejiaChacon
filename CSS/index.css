@@ -1,0 +1,7 @@
+.inicio{
+--opacidad-negro: 0.5;
+background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/fondo1.webp");
+background-position: center;
+background-size: cover;
+height:30rem;  
+}
