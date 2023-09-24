@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pedro Mejía</title>
     <meta name="author" content="Pedro Mejía">
 
 
@@ -17,11 +17,51 @@
   <!-- Template Main CSS File -->
   <!-- Google Tag Manager -->
   <!-- Políticas de seguridad -->
+  <!-- Incluye la hoja de estilo de Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Incluye la biblioteca de Bootstrap JavaScript (Popper.js es necesario para algunos componentes) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <style>
+    .ana {
+          background-color: #5b5b5b; /* Cambia #333 al color oscuro que desees */
+          color: white;
+        }
+    /* Estilo para los botones de control del carrusel */
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        color: white; /* Texto blanco */
+        border: none; /* Sin borde */
+    }
+
+    /* Estilo para los íconos de los botones de control */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: transparent; /* Fondo transparente */
+    }
+
+    /* Estilo para el botón de control activo */
+    .carousel-control-prev[aria-disabled="false"],
+    .carousel-control-next[aria-disabled="false"] {
+        opacity: 1; /* Opacidad completa */
+    }
+
+    footer {
+            background-color: #333; /* Color de fondo oscuro */
+            color: white; /* Color del texto en el footer */
+            padding: 20px 0; /* Espaciado interno */
+            text-align: center; /* Alineación del texto al centro */
+        }
+  </style>
+
 </head>
 <body>
     <header class="header">
       <!--navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="./img/Logos/PGMC.ico" alt="Logo" width="70" height="48" class="d-inline-block align-text-top">
@@ -42,15 +82,12 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
                   </li>
                 </ul>
               </div>
@@ -61,59 +98,88 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <span>Bienvenido</span>
+              <span style="color:white;">Bienvenido</span>
             </div>
           </div>
         </div>
       </section>
     </header>
     <main>
-      <secction class="a">
+      <!-- Carrusel-->
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" style="max-width: 1300px; margin: 0 auto;">
+              <div class="carousel-item active text-center">
+                  <img src="./img/backiee-220562.jpg" class="d-block mx-auto w-100" alt="Imagen 1">
+              </div>
+              <div class="carousel-item text-center">
+                  <img src="./img/backiee-220786.jpg" class="d-block mx-auto w-100" alt="Imagen 2">
+              </div>
+              <div class="carousel-item text-center">
+                  <img src="./img/backiee-186635 (1).jpg" class="d-block mx-auto w-100" alt="Imagen 3">
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    <!-- /Carrusel-->
+      <section class="ana">
+        <h1>Dibujos</h1>
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="card" style="width: 18rem;">
-                <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
+                <img src="./img/calaco.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">El calaco</h5>
+                  <p class="card-text">Craneo dibujado a pluma pensado para un tatuaje futuro.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card" style="width: 18rem;">
-                <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
+                <img src="./img/monstrito.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Monstrito</h5>
+                  <p class="card-text">Pequeño mosntrito wena onda.</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card" style="width: 18rem;">
-                <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
+                <img src="./img/PGMC (1).png" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Yo mero</h5>
+                  <p class="card-text">Mi yo del universo de GTA San Andreas.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </secction>
-      <secction class="a">
+      <secction class="pedro">
+        <h1>Redes sociales</h1>
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               <div class="card" style="width: 18rem;">
-                <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
+                <img src="./img/Instagram_logo_2016.svg (1).webp" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Instagrains</h5>
+                  <p class="card-text">Halooo.</p>
+                  <a href="https://www.instagram.com/conkerpedro/" class="btn btn-primary">Ir a Instagram</a>
                 </div>
               </div>
             </div>
@@ -121,32 +187,28 @@
               <div class="card" style="width: 18rem;">
                 <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Spotiflais</h5>
+                  <p class="card-text">Date grasa.</p>
+                  <a href="https://l.instagram.com/?u=https%3A%2F%2Fopen.spotify.com%2Fuser%2Fconker1030%3Fsi%3DaEetgoYjQbCxzmOHcpESbw%26utm_source%3Dcopy-link&e=AT0ke4KW_1yAXjpIN7oARKZYMn38aN2bdg0s8NUqYwXa5D3ixCVY_YS-Ycw_ytO_SwxqAgqrSf_R4b8uIJ7J3HX55m7am20KRcK6m5udAZAgqX7Z8CFNQA" class="btn btn-primary">Ir a Spotify</a>
                 </div>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="card" style="width: 18rem;">
-                <img src="./img/Spotify (1).png" class="card-img-top" alt="...">
+                <img src="./img/Tiktok-Logo-2016 (1).png" class="card-img-top" alt="...">
                   <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">Tiktak</h5>
+                  <p class="card-text">Sigueme para más 😉.</p>
+                  <a href="https://www.tiktok.com/@conkerpedro?_t=8fwS3IqoGVJ&_r=1" class="btn btn-primary">Ir a tiktak</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </secction>
-      <section>
-        
-      </section>
-      <section>
-        <h2>Pedro Gabriel Mejía Chacón</h2>
-        <img src="./img/PGMC (1).png" class="img-fluid" alt="...">
-      </section>
     </main>
+    <footer>
+      <p>&copy; 2023 Pedro Gabriel Mejía Chacón. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
