@@ -13,6 +13,11 @@ height:40rem;
     .card-title{
         font-style: italic;
         font-size: 2.5rem;
+        
+    }
+    .card-img{
+        width: 20rem;
+        height: 10rem;
     }
 }
 .pedro{
@@ -23,6 +28,10 @@ height:40rem;
     }
     .card-title{
         font-style: italic;
+    }
+    .card-img{
+        width: 20rem;
+        height: 10rem;
     }
 }
 
