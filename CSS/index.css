@@ -6,6 +6,8 @@ background-size: cover;
 height:40rem;  
 }
 .ana{
+    background-color: #5b5b5b; /* Cambia #333 al color oscuro que desees */
+    color: white;
     .card{
         border-color:rgb(0, 0, 0);
         border-style: double;
@@ -16,8 +18,8 @@ height:40rem;
         
     }
     .card-img{
-        width: 20rem;
-        height: 10rem;
+        width: 300px;
+        height: 300px;
     }
 }
 .pedro{
@@ -30,8 +32,34 @@ height:40rem;
         font-style: italic;
     }
     .card-img{
-        width: 20rem;
-        height: 10rem;
+        width: 300px;
+        height: 300px;
     }
 }
+/* Estilo para los botones de control del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+}
+
+/* Estilo para los íconos de los botones de control */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilo para el botón de control activo */
+.carousel-control-prev[aria-disabled="false"],
+.carousel-control-next[aria-disabled="false"] {
+    opacity: 1; /* Opacidad completa */
+}
+
+footer {
+        background-color: #333; /* Color de fondo oscuro */
+        color: white; /* Color del texto en el footer */
+        padding: 20px 0; /* Espaciado interno */
+        text-align: center; /* Alineación del texto al centro */
+    }
 
